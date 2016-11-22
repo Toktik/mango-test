@@ -21,6 +21,8 @@ export class ProjectConfig extends SeedConfig {
     // Add `NPM` third-party libraries to be injected/bundled.
     this.NPM_DEPENDENCIES = [
       ...this.NPM_DEPENDENCIES,
+      {src: 'angular2-data-table/release/datatable.css', inject: true, vendor: true},
+      {src: 'angular2-data-table/release/material.css', inject: true, vendor: true}
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
     ];
